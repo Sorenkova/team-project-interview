@@ -1,0 +1,14 @@
+.footer {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-text-dark);
+}
+
+.wrapper-footer {
+  width: 4rem;
+}
+
+.footer .link {
+  width: 100%;
+}
