@@ -1,0 +1,23 @@
+.link:link,
+.link:visited {
+  font-family: 'Helvetica', sans-serif;
+  color: var(--color-text-dark);
+  letter-spacing: 0.6px;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover,
+.link:active {
+  cursor: pointer;
+  color: var(--color-hover);
+}
+
+.link:link.link-active,
+.link:hover.link-active,
+.link:visited.link-active,
+.link:active.link-active {
+  color: var(--color-hover);
+}
