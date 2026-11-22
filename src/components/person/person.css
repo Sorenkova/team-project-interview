@@ -1,0 +1,34 @@
+.wrapper-person {
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.wrapper-person:last-child {
+  flex-direction: row-reverse;
+}
+
+.wrapper-person-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.wrapper-person-img {
+  width: 35rem;
+  height: 28rem;
+  border-radius: 1.5rem;
+  background-color: var(--color-main);
+}
+
+.link-person {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.link-person .icon {
+  width: 2rem;
+  height: 2rem;
+}
