@@ -1,0 +1,41 @@
+.header {
+  margin: 2.5rem 0;
+}
+
+.wrapper-header {
+  max-width: 142rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.wrapper-logo {
+  width: 8rem;
+  margin-right: 5rem;
+}
+
+.icon {
+  height: 2.4rem;
+}
+
+.icon.icon-logo {
+  width: 100%;
+  margin-right: 3rem;
+}
+
+.wrapper-icons {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.wrapper-icons .link {
+  height: 2.4rem;
+}
