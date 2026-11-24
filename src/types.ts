@@ -20,3 +20,5 @@ export interface Product {
   description?: string;
   imageUrl?: string;
 }
+
+export type ProductLite = Omit<Product, 'rooms' | 'description'>;
