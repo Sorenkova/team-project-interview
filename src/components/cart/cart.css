@@ -1,0 +1,131 @@
+.wrapper-cart {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-items {
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.wrapper-items .text-cart,
+.wrapper-sale .text-cart {
+  padding: 1.6rem 0;
+  font-size: 1.6rem;
+}
+
+.wrapper-cart-items {
+  min-height: 10rem;
+}
+
+.wrapper-cart-items .wrapper-items {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-img {
+  width: 12rem;
+  height: 12rem;
+  background-color: var(--color-accent);
+  border-radius: 0.5rem;
+}
+
+.product-img {
+  width: 100%;
+}
+
+.wrapper-subtotal {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  width: 54.5rem;
+  height: 4.4rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-accent);
+  margin-right: 2rem;
+}
+
+.text.text-label {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  color: var(--color-hover);
+}
+
+.btn {
+  width: 9rem;
+  height: 4.4rem;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.6rem;
+  background-color: var(--color-accent);
+  border-radius: 5rem;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--color-text-dark);
+  color: var(--color-main);
+}
+
+.wrapper-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.wrapper-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wrapper-description .text-cart,
+.wrapper-price .text-cart {
+  padding: 0;
+}
+
+.wrapper-description .text-cart:nth-of-type(2) {
+  color: var(--color-hover);
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.wrapper-buttons,
+.btn-icon {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-buttons {
+  gap: 1rem;
+}
+
+.btn.btn-icon {
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-price {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  align-self: flex-start;
+}
+
+.wrapper-items {
+  margin-bottom: 1rem;
+}
+
+.wrapper-sale {
+  margin-top: 3rem;
+}
