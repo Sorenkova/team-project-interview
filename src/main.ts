@@ -3,7 +3,7 @@ import { createFooter } from './components/footer/footer';
 import { createHeader } from './components/header/header';
 import { createMain } from './components/main/main';
 import { createNewElement } from './utils/createNewElement';
-import { renderCatalog } from './catalog/catalog.ts';
+import { createCatalogView } from './catalog/catalogView.ts';
 import { products } from './data/products.ts';
 import { getPageName, type PageName } from './router.ts';
 import './style.css';
@@ -15,11 +15,11 @@ function createPage(content: HTMLElement): HTMLElement {
 }
 
 function createCatalogPage(): HTMLElement {
-  const catalog = document.createElement('section');
-  renderCatalog(catalog, products, (productId) => {
-    console.log('Add to cart:', productId);
-  });
-  return createPage(catalog);
+  return createPage(
+    createCatalogView(products, (productId) => {
+      console.log('Add to cart:', productId);
+    })
+  );
 }
 
 const pages: Record<PageName, () => HTMLElement> = {
