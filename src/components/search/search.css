@@ -1,0 +1,135 @@
+.header {
+  position: relative;
+  z-index: 20;
+}
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  height: 2.4rem;
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.search-overlay {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+}
+
+.search-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: rgba(250, 248, 242, 0.4);
+  backdrop-filter: blur(1.2rem);
+}
+
+.search-panel {
+  position: relative;
+  padding: 2.4rem 0 8rem;
+  border-top: 1px solid var(--color-accent);
+  background: var(--color-main);
+}
+
+.search-inner {
+  max-width: 142rem;
+  margin: 0 auto;
+}
+
+.search-field {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 60rem;
+  height: 4.8rem;
+  padding: 0 1.2rem 0 2rem;
+  border-radius: 999px;
+  background: var(--color-accent);
+}
+
+.search-field .icon {
+  height: 2.4rem;
+  flex-shrink: 0;
+}
+
+.search-columns {
+  display: grid;
+  grid-template-columns: 30rem 1fr;
+  gap: 3rem;
+  margin-top: 9rem;
+}
+
+.search-title {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.search-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+
+.search-products {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, minmax(0, 28rem));
+  grid-template-rows: repeat(3, auto);
+  gap: 1rem 1.5rem;
+  list-style: none;
+}
+
+.search-link,
+.search-product {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.search-thumb {
+  display: flex;
+  flex-shrink: 0;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.6rem;
+  background: var(--color-accent);
+}
+
+.search-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+@media (max-width: 800px) {
+  .search-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .search-products {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+}
